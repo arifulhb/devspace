@@ -35,11 +35,20 @@ The following dependencies are installed using apt-get as they are required to i
  
 # Installation
 
-## Install via Git
+### Install via Git
 To use DevSpace vagrant, clone this github repo 
-`git clone ` 
-to your mac/pc/linux.  When clone is complete, go to the directory and now you are ready to provision your Virtual Machine, run:
-`$ vagrant up`
+
+    $ git clone https://github.com/arifulhb/devspace.git
+to your mac/pc/linux.  When clone is complete, go to the `devspace` and now you are ready to use your Virtual Machine.
+
+### Use
+Start the VM
+
+    $ cd /devspace
+    $ vagrant up
+
+First time of your 'vagrant up' will provision the vagrant. You can see the status of your VM from [http://192.168.33.10](http://192.168.33.10).
+You can check the `phpinfo` from  [http://192.168.33.10/phpinfo.php](http://192.168.33.10/phpinfo.php)
 
 ### Requirements
 You must have [Vagrant](http://vagrantup.com) and [VirtualBox](https://www.virtualbox.org)installed in your pc.
