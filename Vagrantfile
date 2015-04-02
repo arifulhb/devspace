@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "private_network", ip: "192.168.33.10"
 
   # Setup synced folder
-  config.vm.synced_folder "projects/", "/var/www/html", group: "www-data", owner: "www-data"
+    config.vm.synced_folder "projects/", "/var/www/html", group: "www-data", owner: "vagrant", :mount_options => ['dmode=775', 'fmode=775']
 
   # CUSTOMIZATION
    config.vm.provider "virtualbox" do |vb|

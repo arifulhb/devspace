@@ -71,6 +71,7 @@ sudo mv composer.phar /usr/local/bin/composer > /dev/null
 echo "Installing Node"
 sudo curl -sL https://deb.nodesource.com/setup | sudo bash - > /dev/null
 sudo sudo apt-get install -y nodejs > /dev/null
+sudo npm install npm -g
 
 echo "Installing Bower"
 sudo npm install bower -g > /dev/null
